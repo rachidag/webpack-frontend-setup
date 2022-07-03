@@ -1,0 +1,74 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -1.5rem;
+  margin-left: -1.5rem;
+
+  &--center {
+    align-items: center;
+  }
+
+  &--reverse {
+    flex-direction: row-reverse;
+  }
+
+  & > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    flex: 0 0 auto;
+    width: calc(100% / 12 * #{$i});
+  }
+}
+
+@include small-screen() {
+  @for $i from 1 through 12 {
+    .col-sm-#{$i} {
+      flex: 0 0 auto;
+      width: calc(100% / 12 * #{$i});
+    }
+  }
+}
+
+@include medium-screen() {
+  @for $i from 1 through 12 {
+    .col-md-#{$i} {
+      flex: 0 0 auto;
+      width: calc(100% / 12 * #{$i});
+    }
+  }
+}
+
+@include large-screen() {
+  @for $i from 1 through 12 {
+    .col-lg-#{$i} {
+      flex: 0 0 auto;
+      width: calc(100% / 12 * #{$i});
+    }
+  }
+}
+
+@include xlarge-screen() {
+  @for $i from 1 through 12 {
+    .col-xl-#{$i} {
+      flex: 0 0 auto;
+      width: calc(100% / 12 * #{$i});
+    }
+  }
+}
+
+@include xxlarge-screen() {
+  @for $i from 1 through 12 {
+    .col-xxl-#{$i} {
+      flex: 0 0 auto;
+      width: calc(100% / 12 * #{$i});
+    }
+  }
+}

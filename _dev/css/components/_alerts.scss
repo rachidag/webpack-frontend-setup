@@ -1,0 +1,47 @@
+.alert {
+    position: relative;
+    padding: 1.5rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid transparent;
+    border-radius: .4rem;
+
+    * {
+        color: inherit;
+    }
+
+    a {
+        font-weight: 500;
+        text-decoration: underline;
+        &:hover {
+            color: inherit;
+        }
+    }
+
+    // Info
+    &--info {
+        color: $alert-info-color;
+        background-color: lighten($alert-info-color, 45);
+        border-color: lighten($alert-info-color, 30);
+    }
+
+    // Success
+    &--success {
+        color: $alert-success-color;
+        background-color: lighten($alert-success-color, 45);
+        border-color: lighten($alert-success-color, 30);
+    }
+
+    // Warning
+    &--warning {
+        color: $alert-warning-color;
+        background-color: lighten($alert-warning-color, 45);
+        border-color: lighten($alert-warning-color, 30);
+    }
+
+    // Danger
+    &--danger {
+        color: $alert-danger-color;
+        background-color: lighten($alert-danger-color, 45);
+        border-color: lighten($alert-danger-color, 30);
+    }
+}

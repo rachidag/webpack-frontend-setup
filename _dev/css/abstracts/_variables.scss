@@ -1,0 +1,52 @@
+// Text
+
+$text-color : #383d42;
+$text-light : lighten($text-color,20);
+$heading-color : #292c30;
+$code-color: #d63384;
+
+
+// Links
+
+$link-color : #49a6e9;
+$link-color-hover : darken($link-color, 15);
+
+
+// Alerts
+$alert-info-color: #2c549d;
+$alert-success-color: #308970;
+$alert-danger-color: #9e454b;
+$alert-warning-color: #a88723;
+
+
+// Boder
+
+$border-color: #e8e8e8;
+
+
+// Backgrounds
+
+$bg-dark : #212529;
+$bg-light : #f8f9fa;
+$mark-bg: #fcf8e3;
+
+
+// Fonts
+
+$font-body : 'Roboto', 'Helvetica', 'arial', 'sans-serif';
+$font-title : 'Roboto', 'Helvetica', 'arial', 'sans-serif';
+$font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+
+// Transition
+
+$transition-base : all 0.2s ease-in-out;
+
+
+// Breakpoints
+
+$small-screen: 576px;
+$medium-screen: 768px;
+$large-screen: 992px;
+$xlarge-screen: 1200px;
+$xxlarge-screen: 1400px;

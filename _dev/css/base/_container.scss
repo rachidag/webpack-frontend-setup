@@ -1,0 +1,35 @@
+%container {
+  width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-fluid {
+  @extend %container;
+}
+
+.container {
+  @extend %container;
+
+  @include small-screen() {
+    max-width: 54rem;
+  }
+
+  @include medium-screen() {
+    max-width: 72rem;
+  }
+
+  @include large-screen() {
+    max-width: 96rem;
+  }
+
+  @include xlarge-screen() {
+    max-width: 114rem;
+  }
+
+  @include xxlarge-screen() {
+    max-width: 132rem;
+  }
+}

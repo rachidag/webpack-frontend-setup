@@ -1,0 +1,31 @@
+// Breackpoint
+
+@mixin small-screen() {
+  @media (min-width: #{$small-screen}) {
+    @content;
+  }
+}
+
+@mixin medium-screen() {
+  @media (min-width: #{$medium-screen}) {
+    @content;
+  }
+}
+
+@mixin large-screen() {
+  @media (min-width: #{$large-screen}) {
+    @content;
+  }
+}
+
+@mixin xlarge-screen() {
+  @media (min-width: #{$xlarge-screen}) {
+    @content;
+  }
+}
+
+@mixin xxlarge-screen() {
+  @media (min-width: #{$xxlarge-screen}) {
+    @content;
+  }
+}
